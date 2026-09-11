@@ -1,0 +1,4624 @@
+```css
+/* =========================================================
+   OWN MUSTAFA LOGISTICS
+   LIGHT PREMIUM THEME
+========================================================= */
+
+
+/* =========================
+   GOOGLE FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+    background: #f7f9fb;
+
+    color: #17212b;
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    min-height: 80px;
+
+    padding: 16px 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 100;
+
+    background: rgba(255, 255, 255, 0.93);
+
+    border-bottom: 1px solid #e7ebef;
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* LOGO */
+
+.logo-main {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    color: #17212b;
+}
+
+.logo-main span {
+    color: #0a8f91;
+
+    font-size: 26px;
+}
+
+.logo small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #7b858f;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.navbar a {
+    position: relative;
+
+    color: #59646e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -9px;
+
+    width: 0;
+    height: 2px;
+
+    background: #0a8f91;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0a8f91;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+
+/* QUOTE BUTTON */
+
+.quote-btn {
+    padding: 12px 22px;
+
+    background: #0a8f91;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    border: 1px solid #0a8f91;
+
+    transition: 0.3s ease;
+}
+
+.quote-btn:hover {
+    background: #ffffff;
+
+    color: #0a8f91;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+
+    min-height: 760px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url("images/truck-hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* OVERLAY */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.97) 0%,
+            rgba(255,255,255,0.91) 34%,
+            rgba(255,255,255,0.55) 60%,
+            rgba(255,255,255,0.12) 100%
+        );
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding-top: 70px;
+}
+
+.hero-label {
+    margin-bottom: 18px;
+
+    color: #0a8f91;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.hero-content h1 {
+    max-width: 720px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: clamp(45px, 6vw, 76px);
+
+    line-height: 1.08;
+
+    color: #17212b;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+    display: block;
+
+    color: #0a8f91;
+}
+
+.hero-content p {
+    max-width: 560px;
+
+    margin-top: 24px;
+
+    color: #59646e;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 34px;
+}
+
+.btn-primary,
+.btn-outline {
+    min-height: 50px;
+
+    padding: 0 26px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #0a8f91;
+
+    color: #ffffff;
+
+    border: 1px solid #0a8f91;
+}
+
+.btn-primary:hover {
+    background: #087477;
+
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid #aeb7bf;
+
+    color: #26333d;
+
+    background: rgba(255,255,255,0.75);
+}
+
+.btn-outline:hover {
+    background: #17212b;
+
+    color: #ffffff;
+
+    border-color: #17212b;
+}
+
+
+/* HERO INFO */
+
+.hero-info {
+    position: absolute;
+
+    right: 6%;
+
+    bottom: 40px;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    background: rgba(255,255,255,0.94);
+
+    border: 1px solid #e2e7eb;
+
+    box-shadow: 0 15px 40px rgba(23,33,43,0.12);
+}
+
+.info-box {
+    min-width: 100px;
+
+    text-align: center;
+}
+
+.info-box strong {
+    display: block;
+
+    color: #17212b;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+.info-box span {
+    color: #7b858f;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.info-divider {
+    width: 1px;
+
+    height: 38px;
+
+    background: #e0e5e9;
+}
+
+
+/* =========================
+   TRACKING
+========================= */
+
+.tracking {
+    padding: 100px 10%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e9edf0;
+}
+
+.tracking-wrapper {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 100px;
+}
+
+.small-title {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #0a8f91;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+.tracking-text h2,
+.section-header h2,
+.about-content h2,
+.cta-content h2 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.12;
+
+    color: #17212b;
+
+    font-weight: 800;
+}
+
+.tracking-text h2 span,
+.section-header h2 span,
+.about-content h2 span,
+.cta-content h2 span {
+    color: #0a8f91;
+}
+
+.tracking-text p {
+    margin-top: 10px;
+
+    color: #78838d;
+
+    font-size: 13px;
+}
+
+
+/* TRACKING FORM */
+
+.tracking-form {
+    width: 520px;
+
+    display: flex;
+
+    border: 1px solid #dce2e6;
+
+    background: #f8fafb;
+}
+
+.tracking-form input {
+    flex: 1;
+
+    min-width: 10;
+
+    height: 80px;
+
+    padding: 10 18px;
+
+    outline: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: #17212b;
+
+    font-size: 16px;
+}
+
+.tracking-form input::placeholder {
+    color: #9aa3ab;
+}
+
+.tracking-form button {
+    height: 58px;
+
+    padding: 0 24px;
+
+    border: none;
+
+    background: #0a8f91;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.tracking-form button:hover {
+    background: #17212b;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 105px 6%;
+
+    background: #f7f9fb;
+}
+
+.section-header {
+    max-width: 650px;
+
+    margin-bottom: 50px;
+}
+
+.section-header p {
+    max-width: 560px;
+
+    margin-top: 16px;
+
+    color: #78838d;
+
+    font-size: 13px;
+}
+
+
+/* SERVICE GRID */
+
+.service-grid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.service-card {
+    position: relative;
+
+    padding: 32px;
+
+    min-height: 300px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8ec;
+
+    box-shadow: 0 8px 30px rgba(23,33,43,0.04);
+
+    transition: 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #a8d5d5;
+
+    box-shadow: 0 18px 45px rgba(23,33,43,0.10);
+}
+
+.service-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.service-top > span {
+    color: #c0c8ce;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+.service-icon {
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eaf7f7;
+
+    border: 1px solid #d2eeee;
+
+    font-size: 24px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+
+    color: #17212b;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 19px;
+}
+
+.service-card p {
+    color: #78838d;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+.service-card a {
+    display: inline-block;
+
+    margin-top: 23px;
+
+    color: #0a8f91;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 55px 6%;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5eaed;
+
+    border-bottom: 1px solid #e5eaed;
+}
+
+.stat-box {
+    text-align: center;
+
+    padding: 8px;
+
+    border-right: 1px solid #e3e7ea;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-box h2 {
+    color: #0a8f91;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 38px;
+
+    font-weight: 800;
+}
+
+.stat-box p {
+    margin-top: 4px;
+
+    color: #7d8790;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+}
+
+
+/* =========================
+   ABOUT PREVIEW
+========================= */
+
+.about-preview {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 105px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.about-image {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    background: #e9eef1;
+}
+
+.about-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 14px;
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+    pointer-events: none;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 500px;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+
+.about-content > p {
+    margin-top: 20px;
+
+    color: #78838d;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* FEATURES */
+
+.about-features {
+    margin: 28px 0;
+}
+
+.feature {
+    display: flex;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.check {
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #0a8f91;
+
+    background: #eaf7f7;
+
+    border: 1px solid #cde9e9;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.feature h4 {
+    color: #26333d;
+
+    font-size: 13px;
+}
+
+.feature p {
+    margin-top: 2px;
+
+    color: #8a949c;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    padding: 110px 6%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.93),
+            rgba(255,255,255,0.93)
+        ),
+        url("images/truck-hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-top: 1px solid #e3e8eb;
+}
+
+.cta-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.cta-content p {
+    max-width: 580px;
+
+    margin: 18px auto 28px;
+
+    color: #78838d;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 55px 6% 25px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e2e7eb;
+}
+
+.footer-logo strong {
+    display: block;
+
+    color: #17212b;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 20px;
+}
+
+.footer-logo strong span {
+    color: #0a8f91;
+}
+
+.footer-logo small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #89939c;
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+}
+
+.footer > p {
+    margin-top: 10px;
+
+    color: #8b959d;
+
+    font-size: 11px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin: 28px 0;
+}
+
+.footer-links a {
+    color: #68737d;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0a8f91;
+}
+
+.copyright {
+    padding-top: 22px;
+
+    border-top: 1px solid #e8ecef;
+
+    color: #9aa3aa;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+    .navbar {
+        gap: 17px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .quote-btn {
+        padding: 10px 15px;
+    }
+
+    .tracking {
+        padding: 60px 4%;
+    }
+
+    .tracking-wrapper {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .tracking-form {
+        width: 100%;
+    }
+
+    .services {
+        padding: 85px 4%;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-preview {
+        padding: 85px 4%;
+
+        gap: 45px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    .header {
+        position: absolute;
+
+        padding: 16px 5%;
+
+        min-height: auto;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .navbar {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 18px;
+
+        padding-bottom: 4px;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+
+        font-size: 9px;
+    }
+
+    .quote-btn {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 720px;
+
+        align-items: flex-start;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(255,255,255,0.96),
+                rgba(255,255,255,0.65)
+            );
+    }
+
+    .hero-content {
+        width: 90%;
+
+        padding-top: 205px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 290px;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+    }
+
+
+    /* HERO INFO */
+
+    .hero-info {
+        left: 5%;
+
+        right: 5%;
+
+        bottom: 24px;
+
+        justify-content: space-around;
+
+        padding: 13px 5px;
+    }
+
+    .info-box {
+        min-width: 80px;
+    }
+
+    .info-box strong {
+        font-size: 13px;
+    }
+
+    .info-box span {
+        font-size: 7px;
+    }
+
+
+    /* TRACKING */
+
+    .tracking {
+        padding: 65px 5%;
+    }
+
+    .tracking-wrapper {
+        gap: 25px;
+    }
+
+    .tracking-text h2 {
+        font-size: 32px;
+    }
+
+    .tracking-form {
+        flex-direction: column;
+
+        border: none;
+
+        gap: 10px;
+
+        background: transparent;
+    }
+
+    .tracking-form input {
+        width: 100%;
+
+        border: 1px solid #dce2e6;
+
+        background: #f8fafb;
+    }
+
+    .tracking-form button {
+        width: 100%;
+    }
+
+
+    /* SERVICES */
+
+    .services {
+        padding: 75px 5%;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 33px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* STATS */
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 45px 5%;
+
+        gap: 30px 0;
+    }
+
+    .stat-box {
+        border-right: none;
+    }
+
+    .stat-box h2 {
+        font-size: 30px;
+    }
+
+
+    /* ABOUT */
+
+    .about-preview {
+        grid-template-columns: 1fr;
+
+        padding: 75px 5%;
+
+        gap: 45px;
+    }
+
+    .about-image {
+        min-height: 350px;
+    }
+
+    .about-image img {
+        min-height: 350px;
+    }
+
+    .about-content h2 {
+        font-size: 33px;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        padding: 85px 5%;
+    }
+
+    .cta-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 50px 5% 20px;
+    }
+
+    .footer-links {
+        gap: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .logo-main {
+        font-size: 15px;
+    }
+
+    .logo-main span {
+        font-size: 21px;
+    }
+
+    .logo small {
+        font-size: 6px;
+
+        letter-spacing: 2px;
+    }
+
+    .navbar {
+        gap: 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 11px;
+    }
+
+    .hero-info {
+        padding: 11px 2px;
+    }
+
+    .info-box {
+        min-width: 65px;
+    }
+
+    .info-box strong {
+        font-size: 11px;
+    }
+
+    .info-box span {
+        font-size: 6px;
+    }
+
+    .tracking-text h2,
+    .section-header h2,
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .stat-box h2 {
+        font-size: 26px;
+    }
+
+}
+```css
+/* =====================================================
+   ABOUT PAGE CSS
+   OWN MUSTAFA LOGISTICS
+   Light / Premium Theme
+===================================================== */
+
+
+/* ================= PAGE HERO ================= */
+
+.page-hero {
+    min-height: 430px;
+    padding: 150px 8% 80px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.92),
+            rgba(247, 249, 251, 0.96)
+        ),
+        url("images/truck-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.page-hero-content {
+    max-width: 750px;
+}
+
+.page-hero h1 {
+    margin: 15px 0 18px;
+
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.05;
+
+    color: #17212b;
+    font-weight: 700;
+}
+
+.page-hero h1 span {
+    color: #0a8f91;
+}
+
+.page-hero p {
+    max-width: 620px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #66727d;
+}
+
+
+/* ================= ABOUT MAIN ================= */
+
+.about-main {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: #ffffff;
+}
+
+.about-main-image {
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(23, 33, 43, 0.12);
+}
+
+.about-main-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.about-main-image:hover img {
+    transform: scale(1.04);
+}
+
+.about-main-content {
+    max-width: 600px;
+}
+
+.about-main-content h2 {
+    margin: 14px 0 22px;
+
+    font-size: clamp(35px, 4vw, 52px);
+    line-height: 1.12;
+
+    color: #17212b;
+}
+
+.about-main-content h2 span {
+    color: #0a8f91;
+}
+
+.about-main-content p {
+    margin-bottom: 17px;
+
+    color: #66727d;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-main-content .btn-primary {
+    display: inline-block;
+
+    margin-top: 20px;
+}
+
+
+/* ================= SMALL TITLE ================= */
+
+.small-title {
+    display: inline-block;
+
+    color: #0a8f91;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= MISSION SECTION ================= */
+
+.mission-section {
+    padding: 100px 8%;
+
+    background: #f7f9fb;
+}
+
+.section-header {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-header h2 {
+    margin: 14px 0 15px;
+
+    font-size: clamp(34px, 4vw, 50px);
+
+    line-height: 1.15;
+
+    color: #17212b;
+}
+
+.section-header h2 span {
+    color: #0a8f91;
+}
+
+.section-header p {
+    color: #66727d;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* ================= MISSION CARDS ================= */
+
+.mission-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.mission-card {
+    padding: 38px 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e9ed;
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #0a8f91;
+
+    box-shadow:
+        0 18px 40px
+        rgba(23, 33, 43, 0.10);
+}
+
+.mission-number {
+    margin-bottom: 25px;
+
+    color: #0a8f91;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.mission-card h3 {
+    margin-bottom: 14px;
+
+    font-size: 25px;
+
+    color: #17212b;
+}
+
+.mission-card p {
+    color: #66727d;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= WHY US ================= */
+
+.why-us {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 0.8fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+    background: #ffffff;
+}
+
+.why-content {
+    max-width: 650px;
+}
+
+.why-content h2 {
+    margin: 14px 0 18px;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    color: #17212b;
+}
+
+.why-content h2 span {
+    color: #0a8f91;
+}
+
+.why-content > p {
+    margin-bottom: 35px;
+
+    color: #66727d;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* ================= WHY LIST ================= */
+
+.why-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.why-item {
+    display: flex;
+
+    gap: 18px;
+
+    align-items: flex-start;
+}
+
+.why-item .check {
+    min-width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8f7f7;
+
+    color: #0a8f91;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.why-item h4 {
+    margin-bottom: 6px;
+
+    font-size: 18px;
+
+    color: #17212b;
+}
+
+.why-item p {
+    color: #66727d;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= WHY BRAND BOX ================= */
+
+.why-box {
+    min-height: 450px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1f8f8,
+            #ffffff
+        );
+
+    border: 1px solid #dfe8ea;
+
+    box-shadow:
+        0 20px 50px
+        rgba(23, 33, 43, 0.08);
+}
+
+.why-box-inner {
+    width: 100%;
+    max-width: 350px;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    border: 1px solid #cbdfe0;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+}
+
+.why-box-inner strong {
+    display: block;
+
+    font-size: 48px;
+
+    letter-spacing: 3px;
+
+    color: #0a8f91;
+}
+
+.why-box-inner > span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #17212b;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.why-box-inner small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #7b8791;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.why-line {
+    width: 55px;
+    height: 2px;
+
+    margin: 25px auto;
+
+    background: #0a8f91;
+}
+
+.why-box-inner p {
+    color: #66727d;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    position: relative;
+
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.94),
+            rgba(241, 248, 248, 0.96)
+        ),
+        url("images/truck-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.cta h2 {
+    margin: 14px 0 18px;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.12;
+
+    color: #17212b;
+}
+
+.cta h2 span {
+    color: #0a8f91;
+}
+
+.cta p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #66727d;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .about-main {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-main-content {
+        max-width: 100%;
+    }
+
+    .about-main-image {
+        height: 430px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .why-us {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .why-content {
+        max-width: 100%;
+    }
+
+    .why-box {
+        min-height: 380px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .page-hero {
+        min-height: 380px;
+
+        padding:
+            130px
+            6%
+            70px;
+    }
+
+    .page-hero h1 {
+        font-size: 42px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+    }
+
+
+    .about-main {
+        padding: 70px 6%;
+
+        gap: 40px;
+    }
+
+    .about-main-image {
+        height: 330px;
+    }
+
+    .about-main-content h2 {
+        font-size: 36px;
+    }
+
+
+    .mission-section {
+        padding: 70px 6%;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        padding: 30px 25px;
+    }
+
+
+    .why-us {
+        padding: 70px 6%;
+    }
+
+    .why-content h2 {
+        font-size: 36px;
+    }
+
+    .why-box {
+        min-height: 330px;
+
+        padding: 20px;
+    }
+
+    .why-box-inner {
+        padding: 40px 20px;
+    }
+
+
+    .cta {
+        padding: 75px 6%;
+    }
+
+    .cta h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .page-hero {
+        padding-top: 120px;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .about-main-content h2,
+    .why-content h2,
+    .section-header h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .about-main-image {
+        height: 280px;
+    }
+
+    .why-box-inner strong {
+        font-size: 40px;
+    }
+
+}
+```css
+/* =====================================================
+   SERVICES PAGE CSS
+   OWN MUSTAFA LOGISTICS
+   Light / Premium Theme
+===================================================== */
+
+
+/* ================= SERVICES INTRO ================= */
+
+.services-intro {
+    padding: 80px 8% 20px;
+    background: #ffffff;
+}
+
+
+/* ================= MAIN SERVICES ================= */
+
+.services-main {
+    padding: 40px 8% 100px;
+text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    background: #ffffff;
+}
+
+
+/* ================= SERVICE LARGE CARD ================= */
+
+.service-large-card {
+    position: relative;
+
+    padding: 38px 32px 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8eb;
+
+    border-radius: 18px;
+
+    box-shadow: 0 12px 35px rgba(23, 33, 43, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.service-large-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #0a8f91;
+
+    box-shadow: 0 22px 45px rgba(23, 33, 43, 0.11);
+}
+
+
+/* ================= SERVICE NUMBER ================= */
+
+.service-card-number {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    color: #c7d2d7;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= SERVICE ICON ================= */
+
+.service-card-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    border-radius: 15px;
+
+    background: #eaf7f7;
+
+    font-size: 30px;
+
+    border: 1px solid #d5eeee;
+}
+
+
+/* ================= SERVICE TITLE ================= */
+
+.service-large-card h2 {
+    margin-bottom: 15px;
+
+    color: #17212b;
+
+    font-size: 27px;
+}
+
+
+/* ================= SERVICE TEXT ================= */
+
+.service-large-card > p {
+    margin-bottom: 24px;
+
+    color: #66727d;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= SERVICE LIST ================= */
+
+.service-large-card ul {
+    margin: 0 0 28px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.service-large-card li {
+    position: relative;
+
+    padding-left: 25px;
+
+    margin-bottom: 12px;
+
+    color: #4f5c66;
+
+    font-size: 14px;
+}
+
+.service-large-card li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: #0a8f91;
+
+    font-weight: 700;
+}
+
+
+/* ================= SERVICE BUTTON ================= */
+
+.service-btn {
+    display: inline-block;
+
+    color: #0a8f91;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.service-btn:hover {
+    color: #17212b;
+
+    transform: translateX(4px);
+}
+
+
+/* ================= PROCESS SECTION ================= */
+
+.process-section {
+    padding: 100px 8%;
+
+    background: #f7f9fb;
+}
+
+
+/* ================= PROCESS GRID ================= */
+
+.process-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= PROCESS CARD ================= */
+
+.process-card {
+    position: relative;
+
+    padding: 32px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8eb;
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #0a8f91;
+
+    box-shadow: 0 15px 35px rgba(23, 33, 43, 0.08);
+}
+
+
+/* ================= PROCESS NUMBER ================= */
+
+.process-number {
+    margin-bottom: 25px;
+
+    color: #0a8f91;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= PROCESS TITLE ================= */
+
+.process-card h3 {
+    margin-bottom: 12px;
+
+    color: #17212b;
+
+    font-size: 21px;
+}
+
+
+/* ================= PROCESS TEXT ================= */
+
+.process-card p {
+    color: #66727d;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* ================= SERVICE FEATURES ================= */
+
+.service-features {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: #ffffff;
+}
+
+
+/* ================= FEATURE CONTENT ================= */
+
+.service-feature-content {
+    max-width: 550px;
+}
+
+.service-feature-content h2 {
+    margin: 14px 0 18px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.service-feature-content h2 span {
+    color: #0a8f91;
+}
+
+.service-feature-content > p {
+    color: #66727d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= FEATURE BOXES ================= */
+
+.feature-boxes {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ================= FEATURE BOX ================= */
+
+.feature-box {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 25px;
+
+    background: #f7f9fb;
+
+    border: 1px solid #e3e9ec;
+
+    border-radius: 14px;
+
+    transition: 0.3s ease;
+}
+
+.feature-box:hover {
+    background: #ffffff;
+
+    border-color: #0a8f91;
+
+    box-shadow: 0 12px 30px rgba(23, 33, 43, 0.07);
+}
+
+
+/* ================= FEATURE CHECK ================= */
+
+.feature-box .check {
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e6f6f6;
+
+    color: #0a8f91;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* ================= FEATURE TEXT ================= */
+
+.feature-box h4 {
+    margin-bottom: 6px;
+
+    color: #17212b;
+
+    font-size: 17px;
+}
+
+.feature-box p {
+    color: #66727d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .services-main {
+        grid-template-columns: 1fr 1fr;
+
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-features {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .service-feature-content {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .services-intro {
+        padding: 60px 6% 15px;
+    }
+
+    .services-main {
+        grid-template-columns: 1fr;
+
+        padding: 25px 6% 70px;
+
+        gap: 20px;
+    }
+
+    .service-large-card {
+        padding: 32px 25px;
+    }
+
+    .process-section {
+        padding: 70px 6%;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .service-features {
+        padding: 70px 6%;
+    }
+
+    .service-feature-content h2 {
+        font-size: 36px;
+    }
+
+    .feature-boxes {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .service-large-card h2 {
+        font-size: 24px;
+    }
+
+    .service-card-icon {
+        width: 58px;
+        height: 58px;
+
+        font-size: 26px;
+    }
+
+    .service-feature-content h2 {
+        font-size: 32px;
+    }
+
+    .feature-box {
+        padding: 20px;
+    }
+
+}
+```
+hr {
+    border: none;
+    height: 2px;
+    background: #00969F;
+    margin: 30px 0;
+}
+```css
+/* =====================================================
+   NEW OUR FLEET PAGE
+   OWN MUSTAFA LOGISTICS
+===================================================== */
+
+
+/* ================= FLEET HERO ================= */
+
+.fleet-hero {
+    min-height: 470px;
+
+    padding: 145px 8% 80px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.97),
+            rgba(255,255,255,0.80),
+            rgba(247,249,251,0.92)
+        ),
+        url("images/truck-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid #e3e9ec;
+}
+
+.fleet-hero-content {
+    max-width: 760px;
+}
+
+.fleet-label {
+    color: #0a8f91;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.fleet-hero h1 {
+    margin: 15px 0 20px;
+
+    color: #17212b;
+
+    font-size: clamp(44px, 6vw, 72px);
+
+    line-height: 1.04;
+}
+
+.fleet-hero h1 span {
+    color: #0a8f91;
+}
+
+.fleet-hero p {
+    max-width: 620px;
+
+    color: #66727d;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.fleet-hero-number {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    padding-bottom: 5px;
+}
+
+.fleet-hero-number strong {
+    color: #0a8f91;
+
+    font-size: 70px;
+
+    line-height: 1;
+}
+
+.fleet-hero-number span {
+    margin-top: 8px;
+
+    color: #7a858e;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= FLEET HEADING ================= */
+
+.fleet-heading {
+    padding: 90px 8% 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 60px;
+
+    background: #ffffff;
+}
+
+.fleet-heading h2 {
+    margin-top: 12px;
+
+    color: #17212b;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.fleet-heading h2 span {
+    color: #0a8f91;
+}
+
+.fleet-heading > p {
+    max-width: 480px;
+
+    margin-bottom: 5px;
+
+    color: #66727d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= VEHICLES SECTION ================= */
+
+.vehicles-section {
+    padding: 25px 8% 100px;
+
+    background: #ffffff;
+}
+
+.vehicles-grid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* ================= VEHICLE CARD ================= */
+
+.vehicle-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ea;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(23,33,43,0.06);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #0a8f91;
+
+    box-shadow:
+        0 25px 55px rgba(23,33,43,0.12);
+}
+
+
+/* ================= VEHICLE IMAGE ================= */
+
+.vehicle-image {
+    height: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #edf3f4;
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.vehicle-card:hover .vehicle-image img {
+    transform: scale(1.06);
+}
+
+
+/* ================= CATEGORY ================= */
+
+.vehicle-category {
+    position: absolute;
+
+    left: 22px;
+    bottom: 20px;
+
+    padding: 9px 14px;
+
+    background: #ffffff;
+
+    color: #0a8f91;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    box-shadow:
+        0 5px 18px rgba(23,33,43,0.12);
+}
+
+
+/* ================= VEHICLE NUMBER ================= */
+
+.vehicle-no {
+    position: absolute;
+
+    top: 20px;
+    right: 22px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.92);
+
+    color: #17212b;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ================= PLACEHOLDER ================= */
+
+.vehicle-placeholder {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf7f7,
+            #f7fafb
+        );
+}
+
+.placeholder-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.placeholder-content span {
+    color: #0a8f91;
+
+    font-size: 48px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.placeholder-content strong {
+    margin-top: 3px;
+
+    color: #17212b;
+
+    font-size: 24px;
+
+    letter-spacing: 2px;
+}
+
+.placeholder-content small {
+    margin-top: 8px;
+
+    color: #7c8992;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+/* ================= VEHICLE BODY ================= */
+
+.vehicle-body {
+    padding: 30px;
+}
+
+
+/* ================= VEHICLE TITLE ================= */
+
+.vehicle-title {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.vehicle-title > div:first-child > span {
+    color: #0a8f91;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.vehicle-title h3 {
+    margin-top: 8px;
+
+    color: #17212b;
+
+    font-size: 27px;
+}
+
+
+/* ================= VEHICLE ICON ================= */
+
+.vehicle-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf7f7;
+
+    border: 1px solid #d6eeee;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+}
+
+.vehicle-body > p {
+    margin: 18px 0 25px;
+
+    color: #66727d;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= VEHICLE SPECS ================= */
+
+.vehicle-specs {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #e6ebee;
+
+    border-bottom: 1px solid #e6ebee;
+}
+
+.vehicle-specs div {
+    padding: 17px 12px;
+
+    border-right: 1px solid #e6ebee;
+}
+
+.vehicle-specs div:last-child {
+    border-right: none;
+}
+
+.vehicle-specs small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #89949c;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.vehicle-specs strong {
+    color: #17212b;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= VEHICLE LINK ================= */
+
+.vehicle-link {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 23px;
+
+    color: #0a8f91;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.vehicle-link span {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.vehicle-link:hover {
+    color: #17212b;
+}
+
+.vehicle-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ================= FLEET STATS ================= */
+
+.fleet-stats {
+    padding: 55px 8%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #17212b;
+}
+
+.fleet-stat {
+    text-align: center;
+
+    padding: 10px;
+
+    border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+.fleet-stat:last-child {
+    border-right: none;
+}
+
+.fleet-stat strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 36px;
+}
+
+.fleet-stat span {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #aeb9bf;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.fleet-benefits {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+    background: #f7f9fb;
+}
+
+.fleet-benefits-heading {
+    max-width: 520px;
+}
+
+.fleet-benefits-heading h2 {
+    margin: 13px 0 18px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.fleet-benefits-heading h2 span {
+    color: #0a8f91;
+}
+
+.fleet-benefits-heading p {
+    color: #66727d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= BENEFIT LIST ================= */
+
+.benefit-list {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.benefit-item {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #dfe6e9;
+}
+
+.benefit-item:first-child {
+    border-top: 1px solid #dfe6e9;
+}
+
+.benefit-item > span {
+    color: #0a8f91;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.benefit-item h3 {
+    margin-bottom: 7px;
+
+    color: #17212b;
+
+    font-size: 20px;
+}
+
+.benefit-item p {
+    color: #66727d;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .fleet-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .fleet-heading {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .vehicles-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .fleet-benefits {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .fleet-hero {
+        min-height: 430px;
+
+        padding:
+            125px
+            6%
+            65px;
+
+        align-items: flex-end;
+    }
+
+    .fleet-hero h1 {
+        font-size: 42px;
+    }
+
+    .fleet-hero p {
+        font-size: 15px;
+    }
+
+    .fleet-hero-number {
+        display: none;
+    }
+
+
+    .fleet-heading {
+        padding: 65px 6% 35px;
+
+        display: block;
+    }
+
+    .fleet-heading h2 {
+        font-size: 36px;
+    }
+
+    .fleet-heading > p {
+        margin-top: 20px;
+    }
+
+
+    .vehicles-section {
+        padding: 20px 6% 70px;
+    }
+
+    .vehicles-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .vehicle-image {
+        height: 270px;
+    }
+
+    .vehicle-body {
+        padding: 25px 22px;
+    }
+
+    .vehicle-title h3 {
+        font-size: 24px;
+    }
+
+
+    .fleet-stats {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 40px 6%;
+
+        gap: 25px;
+    }
+
+    .fleet-stat {
+        border-right: none;
+    }
+
+
+    .fleet-benefits {
+        padding: 70px 6%;
+    }
+
+    .fleet-benefits-heading h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .fleet-hero h1 {
+        font-size: 36px;
+    }
+
+    .vehicle-image {
+        height: 230px;
+    }
+
+    .vehicle-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-specs div {
+        border-right: none;
+
+        border-bottom: 1px solid #e6ebee;
+    }
+
+    .vehicle-specs div:last-child {
+        border-bottom: none;
+    }
+
+    .fleet-stat strong {
+        font-size: 30px;
+    }
+
+}
+```css
+/* =====================================================
+   TRACKING PAGE
+   OWN MUSTAFA LOGISTICS
+===================================================== */
+
+
+/* ================= TRACKING HERO ================= */
+
+.tracking-hero {
+    min-height: 470px;
+
+    padding: 145px 8% 80px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.97),
+            rgba(255,255,255,0.82),
+            rgba(247,249,251,0.94)
+        ),
+        url("images/truck-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid #e3e9ec;
+}
+
+.tracking-hero-content {
+    max-width: 750px;
+}
+
+.tracking-label {
+    color: #0a8f91;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.tracking-hero h1 {
+    margin: 15px 0 20px;
+
+    color: #17212b;
+
+    font-size: clamp(44px, 6vw, 72px);
+
+    line-height: 1.04;
+}
+
+.tracking-hero h1 span {
+    color: #0a8f91;
+}
+
+.tracking-hero p {
+    max-width: 600px;
+
+    color: #66727d;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.tracking-hero-number {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    padding-bottom: 5px;
+}
+
+.tracking-hero-number strong {
+    color: #0a8f91;
+
+    font-size: 62px;
+
+    line-height: 1;
+}
+
+.tracking-hero-number span {
+    margin-top: 8px;
+
+    color: #7a858e;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= TRACKING SECTION ================= */
+
+.tracking-section {
+    padding: 100px 8%;
+
+    background: #ffffff;
+}
+
+.tracking-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.tracking-intro {
+    max-width: 480px;
+}
+
+.tracking-intro h2 {
+    margin: 13px 0 18px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.tracking-intro h2 span {
+    color: #0a8f91;
+}
+
+.tracking-intro p {
+    color: #66727d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= TRACKING BOX ================= */
+
+.tracking-box {
+    padding: 35px;
+
+    background: #f7f9fb;
+
+    border: 1px solid #dfe6e9;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 45px rgba(23,33,43,0.07);
+}
+
+.tracking-box-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #dfe6e9;
+}
+
+.tracking-box-top span {
+    color: #0a8f91;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ================= TRACKING FORM ================= */
+
+.tracking-form {
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.tracking-input {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.tracking-input label {
+    color: #17212b;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tracking-input input {
+    width: 100%;
+
+    padding: 17px 18px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    color: #17212b;
+
+    border: 1px solid #d5dee2;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.tracking-input input::placeholder {
+    color: #9aa5ac;
+}
+
+.tracking-input input:focus {
+    border-color: #0a8f91;
+
+    box-shadow:
+        0 0 0 3px rgba(10,143,145,0.10);
+}
+
+
+/* ================= TRACKING BUTTON ================= */
+
+.tracking-btn {
+    width: 100%;
+
+    padding: 16px 20px;
+
+    background: #0a8f91;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    transition: 0.3s ease;
+}
+
+.tracking-btn:hover {
+    background: #17212b;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= TRACKING RESULT ================= */
+
+.tracking-result {
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    align-items: center;
+
+    gap: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #d9e7e8;
+
+    border-left: 4px solid #0a8f91;
+
+    border-radius: 10px;
+}
+
+.tracking-result.show {
+    display: flex;
+}
+
+.result-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f7f7;
+
+    color: #0a8f91;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tracking-result span {
+    color: #0a8f91;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.tracking-result h3 {
+    margin: 5px 0;
+
+    color: #17212b;
+
+    font-size: 18px;
+}
+
+.tracking-result p {
+    color: #66727d;
+
+    font-size: 13px;
+}
+
+
+/* ================= TRACKING PROCESS ================= */
+
+.tracking-process {
+    padding: 100px 8%;
+
+    background: #f7f9fb;
+}
+
+.section-header {
+    max-width: 650px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-header h2 {
+    margin-top: 13px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.section-header h2 span {
+    color: #0a8f91;
+}
+
+
+/* ================= TRACKING STEPS ================= */
+
+.tracking-steps {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.tracking-step {
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ea;
+
+    border-radius: 14px;
+
+    transition: 0.3s ease;
+}
+
+.tracking-step:hover {
+    transform: translateY(-6px);
+
+    border-color: #0a8f91;
+
+    box-shadow:
+        0 15px 35px rgba(23,33,43,0.08);
+}
+
+.step-number {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #0a8f91;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.tracking-step h3 {
+    margin-bottom: 10px;
+
+    color: #17212b;
+
+    font-size: 20px;
+}
+
+.tracking-step p {
+    color: #66727d;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= TRACKING INFO ================= */
+
+.tracking-info {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: #ffffff;
+}
+
+.tracking-info-content {
+    max-width: 550px;
+}
+
+.tracking-info-content h2 {
+    margin: 13px 0 18px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.tracking-info-content h2 span {
+    color: #0a8f91;
+}
+
+.tracking-info-content p {
+    margin-bottom: 28px;
+
+    color: #66727d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= INFO CARD ================= */
+
+.tracking-info-card {
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    background: #17212b;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 45px rgba(23,33,43,0.15);
+}
+
+.info-card-item {
+    padding: 15px;
+
+    text-align: center;
+
+    border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+.info-card-item:last-child {
+    border-right: none;
+}
+
+.info-card-item strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 30px;
+}
+
+.info-card-item span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #aeb9bf;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .tracking-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .tracking-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .tracking-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .tracking-intro {
+        max-width: 650px;
+    }
+
+    .tracking-process {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .tracking-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tracking-info {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .tracking-hero {
+        min-height: 430px;
+
+        padding:
+            125px
+            6%
+            65px;
+
+        align-items: flex-end;
+    }
+
+    .tracking-hero h1 {
+        font-size: 42px;
+    }
+
+    .tracking-hero p {
+        font-size: 15px;
+    }
+
+    .tracking-hero-number {
+        display: none;
+    }
+
+
+    .tracking-section {
+        padding: 70px 6%;
+    }
+
+    .tracking-intro h2 {
+        font-size: 36px;
+    }
+
+    .tracking-box {
+        padding: 25px 20px;
+    }
+
+    .tracking-box-top {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .tracking-process {
+        padding: 70px 6%;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    .tracking-steps {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .tracking-info {
+        padding: 70px 6%;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .tracking-info-content h2 {
+        font-size: 36px;
+    }
+
+    .tracking-info-card {
+        padding: 25px 10px;
+    }
+
+    .info-card-item strong {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .tracking-hero h1 {
+        font-size: 36px;
+    }
+
+    .tracking-box {
+        padding: 22px 16px;
+    }
+
+    .tracking-result {
+        align-items: flex-start;
+    }
+
+    .result-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tracking-info-card {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card-item {
+        border-right: none;
+
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .info-card-item:last-child {
+        border-bottom: none;
+    }
+
+}
+```css
+/* =====================================================
+   CONTACT PAGE
+   OWN MUSTAFA LOGISTICS
+===================================================== */
+
+
+/* ================= CONTACT HERO ================= */
+
+.contact-hero {
+    min-height: 470px;
+
+    padding: 145px 8% 80px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.97),
+            rgba(255,255,255,0.82),
+            rgba(247,249,251,0.94)
+        ),
+        url("images/truck-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid #e3e9ec;
+}
+
+.contact-hero-content {
+    max-width: 760px;
+}
+
+.contact-label {
+    color: #0a8f91;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.contact-hero h1 {
+    margin: 15px 0 20px;
+
+    color: #17212b;
+
+    font-size: clamp(44px, 6vw, 72px);
+
+    line-height: 1.04;
+}
+
+.contact-hero h1 span {
+    color: #0a8f91;
+}
+
+.contact-hero p {
+    max-width: 600px;
+
+    color: #66727d;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.contact-hero-number {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    padding-bottom: 5px;
+}
+
+.contact-hero-number strong {
+    color: #0a8f91;
+
+    font-size: 62px;
+
+    line-height: 1;
+}
+
+.contact-hero-number span {
+    margin-top: 8px;
+
+    color: #7a858e;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    padding: 100px 8%;
+
+    background: #ffffff;
+}
+
+.contact-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+.contact-intro {
+    max-width: 480px;
+}
+
+.contact-intro h2 {
+    margin: 13px 0 18px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.contact-intro h2 span {
+    color: #0a8f91;
+}
+
+.contact-intro p {
+    color: #66727d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= CONTACT DETAILS ================= */
+
+.contact-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.contact-detail {
+    padding: 25px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    background: #f7f9fb;
+
+    border: 1px solid #e1e7ea;
+
+    border-radius: 14px;
+
+    transition: 0.3s ease;
+}
+
+.contact-detail:hover {
+    transform: translateY(-4px);
+
+    border-color: #0a8f91;
+
+    box-shadow:
+        0 12px 30px rgba(23,33,43,0.07);
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e8f7f7;
+
+    border: 1px solid #d5eeee;
+
+    border-radius: 12px;
+
+    font-size: 21px;
+}
+
+.contact-detail span {
+    color: #0a8f91;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.contact-detail h3 {
+    margin: 6px 0 6px;
+
+    color: #17212b;
+
+    font-size: 19px;
+}
+
+.contact-detail p {
+    color: #66727d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= MAP SECTION ================= */
+
+.map-section {
+    padding: 90px 0 0;
+
+    background: #f7f9fb;
+}
+
+.map-heading {
+    padding: 0 8% 35px;
+
+    text-align: center;
+}
+
+.map-heading h2 {
+    margin-top: 12px;
+
+    color: #17212b;
+
+    font-size: clamp(35px, 4vw, 50px);
+}
+
+.map-heading h2 span {
+    color: #0a8f91;
+}
+
+
+/* ================= FULL WIDTH MAP ================= */
+
+.map-container {
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-top: 1px solid #dfe6e9;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* ================= CONTACT FORM SECTION ================= */
+
+.contact-form-section {
+    padding: 100px 8%;
+
+    background: #ffffff;
+}
+
+.contact-form-container {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.form-heading {
+    margin-bottom: 45px;
+
+    text-align: center;
+}
+
+.form-heading h2 {
+    margin: 12px 0 17px;
+
+    color: #17212b;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+}
+
+.form-heading h2 span {
+    color: #0a8f91;
+}
+
+.form-heading p {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #66727d;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form {
+    width: 100%;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: #f7f9fb;
+
+    border: 1px solid #e1e7ea;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 45px rgba(23,33,43,0.06);
+}
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.form-group label {
+    color: #17212b;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 16px 17px;
+
+    background: #ffffff;
+
+    color: #17212b;
+
+    border: 1px solid #d5dee2;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa5ac;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0a8f91;
+
+    box-shadow:
+        0 0 0 3px rgba(10,143,145,0.10);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    min-height: 170px;
+
+    resize: vertical;
+}
+
+
+/* ================= SUBMIT BUTTON ================= */
+
+.contact-submit {
+    width: 100%;
+
+    padding: 17px 20px;
+
+    background: #0a8f91;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.contact-submit:hover {
+    background: #17212b;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= SUCCESS MESSAGE ================= */
+
+.contact-success {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 18px 20px;
+
+    background: #eaf8f8;
+
+    color: #0a8f91;
+
+    border: 1px solid #cdeaea;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-success.show {
+    display: block;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .contact-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .contact-intro {
+        max-width: 650px;
+    }
+
+    .contact-form-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .contact-hero {
+        min-height: 430px;
+
+        padding:
+            125px
+            6%
+            65px;
+
+        align-items: flex-end;
+    }
+
+    .contact-hero h1 {
+        font-size: 42px;
+    }
+
+    .contact-hero p {
+        font-size: 15px;
+    }
+
+    .contact-hero-number {
+        display: none;
+    }
+
+
+    .contact-section {
+        padding: 70px 6%;
+    }
+
+    .contact-intro h2 {
+        font-size: 36px;
+    }
+
+    .contact-detail {
+        padding: 22px 18px;
+    }
+
+
+    .map-section {
+        padding-top: 70px;
+    }
+
+    .map-heading {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .map-container {
+        height: 380px;
+    }
+
+
+    .contact-form-section {
+        padding: 70px 6%;
+    }
+
+    .form-heading {
+        margin-bottom: 35px;
+    }
+
+    .form-heading h2 {
+        font-size: 36px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .contact-hero h1 {
+        font-size: 36px;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+    }
+
+    .map-container {
+        height: 330px;
+    }
+
+    .contact-form {
+        padding: 22px 16px;
+    }
+
+    .form-group textarea {
+        min-height: 140px;
+    }
+
+}
+

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Track Shipment | OWN Mustafa Logistics</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-main">
+                <span>OWN</span> MUSTAFA
+            </div>
+
+            <small>LOGISTICS & TRANSPORT</small>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="fleet.html">Our Fleet</a>
+            <a href="tracking.html" class="active">Tracking</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="quote-btn">
+            Get a Quote
+        </a>
+
+    </header>
+
+
+    <!-- ================= TRACKING HERO ================= -->
+     <br>  
+          <br>
+          <br>
+          <br>
+          <br>
+    <section class="tracking-hero">
+
+        <div class="tracking-hero-content">
+
+            <span class="tracking-label">
+                SHIPMENT TRACKING
+            </span>
+
+            <h1>
+                Track Your
+                <span>Shipment.</span>
+            </h1>
+
+            <p>
+                Enter your tracking number below to check
+                the current status of your shipment.
+            </p>
+
+        </div>
+
+        <div class="tracking-hero-number">
+            <strong>24/7</strong>
+            <span>TRACKING SUPPORT</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRACKING SECTION ================= -->
+
+    <section class="tracking-section">
+
+        <div class="tracking-container">
+
+            <div class="tracking-intro">
+
+                <span class="small-title">
+                    TRACK YOUR CARGO
+                </span>
+
+                <h2>
+                    Where Is Your
+                    <span>Shipment?</span>
+                </h2>
+
+                <p>
+                    Use your shipment tracking number to
+                    get an update about your cargo.
+                </p>
+
+            </div>
+
+
+            <!-- TRACKING BOX -->
+
+            <div class="tracking-box">
+
+                <div class="tracking-box-top">
+
+                    <span>
+                        TRACKING NUMBER
+                    </span>
+
+                    <span>
+                        OWN LOGISTICS
+                    </span>
+
+                </div>
+
+
+                <form class="tracking-form" onsubmit="trackShipment(event)">
+
+                    <div class="tracking-input">
+
+                        <label for="trackingNumber">
+                            Tracking Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="trackingNumber"
+                            placeholder="Enter tracking number"
+                            required
+                        >
+
+                    </div>
+
+                    <button type="submit" class="tracking-btn">
+                        Track Shipment →
+                    </button>
+
+                </form>
+
+
+                <!-- DEMO RESULT -->
+
+                <div id="trackingResult" class="tracking-result">
+
+                    <div class="result-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <span>SHIPMENT STATUS</span>
+
+                        <h3>
+                            Shipment In Transit
+                        </h3>
+
+                        <p>
+                            Your shipment is currently on the way.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRACKING PROCESS ================= -->
+
+    <section class="tracking-process">
+
+        <div class="section-header">
+
+            <span class="small-title">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                Simple Shipment
+                <span>Tracking.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="tracking-steps">
+
+
+            <div class="tracking-step">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <div>
+                    <h3>
+                        Enter Number
+                    </h3>
+
+                    <p>
+                        Enter your shipment tracking number
+                        in the tracking box.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="tracking-step">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <div>
+                    <h3>
+                        Check Status
+                    </h3>
+
+                    <p>
+                        Our tracking system checks the
+                        shipment information.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="tracking-step">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <div>
+                    <h3>
+                        Get Updates
+                    </h3>
+
+                    <p>
+                        View the current shipment status
+                        and delivery progress.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tracking-step">
+
+                <span class="step-number">
+                    04
+                </span>
+
+                <div>
+                    <h3>
+                        Safe Delivery
+                    </h3>
+
+                    <p>
+                        Your cargo reaches its destination
+                        safely and professionally.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRACKING INFO ================= -->
+
+    <section class="tracking-info">
+
+        <div class="tracking-info-content">
+
+            <span class="small-title">
+                NEED HELP?
+            </span>
+
+            <h2>
+                Can't Find Your
+                <span>Shipment?</span>
+            </h2>
+
+            <p>
+                If your tracking number is not showing an
+                update, contact our support team for assistance.
+            </p>
+
+            <a href="contact.html" class="btn-primary">
+                Contact Support →
+            </a>
+
+        </div>
+
+
+        <div class="tracking-info-card">
+
+            <div class="info-card-item">
+                <strong>24/7</strong>
+                <span>Customer Support</span>
+            </div>
+
+            <div class="info-card-item">
+                <strong>500+</strong>
+                <span>Deliveries</span>
+            </div>
+
+            <div class="info-card-item">
+                <strong>100%</strong>
+                <span>Commitment</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <span class="small-title">
+                MOVING CARGO?
+            </span>
+
+            <h2>
+                Let's Get Your
+                <span>Cargo Moving.</span>
+            </h2>
+
+            <p>
+                Contact OWN Mustafa Logistics for reliable
+                transportation and logistics solutions.
+            </p>
+
+            <a href="contact.html" class="btn-primary">
+                Get a Free Quote →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+
+            <strong>
+                <span>OWN</span> MUSTAFA
+            </strong>
+
+            <small>
+                LOGISTICS & TRANSPORT
+            </small>
+
+        </div>
+
+        <p>
+            Reliable Transport. Professional Logistics.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 OWN Mustafa Logistics. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- ================= TRACKING JAVASCRIPT ================= -->
+
+    <script>
+
+        function trackShipment(event) {
+
+            event.preventDefault();
+
+            const trackingNumber =
+                document.getElementById("trackingNumber").value;
+
+            const result =
+                document.getElementById("trackingResult");
+
+            if (trackingNumber.trim() !== "") {
+
+                result.classList.add("show");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
